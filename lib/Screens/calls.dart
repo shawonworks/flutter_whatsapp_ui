@@ -84,7 +84,7 @@ class _CallsState extends State<Calls> {
 
             // End Call Button
             SizedBox(
-              width: double.infinity,
+              width: 120,
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.pop(context);
