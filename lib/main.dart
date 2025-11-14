@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/Screens/calls.dart';
 
 void main() {
   runApp(const MyApp());
@@ -102,8 +103,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         ? "you missed audio call"
                         : "you missed video call",
                   ),
-                  trailing: Icon(
-                    index / 5 == 0 ? Icons.phone : Icons.video_call,
+                  trailing: GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Calls()),
+                      );
+                    },
+                    child: Icon(
+                      index / 5 == 0 ? Icons.phone : Icons.video_call,
+                    ),
                   ),
                   textColor: Colors.black,
                 );
