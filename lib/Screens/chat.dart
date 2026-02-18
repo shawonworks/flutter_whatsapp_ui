@@ -19,6 +19,7 @@ class _ChatState extends State<Chat> {
           itemCount: 50,
           itemBuilder: (context, index) {
             return ListTile(
+              ///////////////image scetion
               leading: CircleAvatar(
                 // backgroundImage: AssetImage("assets/images/img_4.png",)
                 backgroundImage: NetworkImage(
