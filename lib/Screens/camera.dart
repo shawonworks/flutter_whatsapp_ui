@@ -12,6 +12,7 @@ class _CameraState extends State<Camera> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      /////////this is appbar
       appBar: AppBar(
         backgroundColor: Colors.black.withOpacity(0.7),
         elevation: 0,
