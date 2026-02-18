@@ -11,6 +11,7 @@ class _ChatConversationState extends State<ChatConversation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      ////////////////appbar
       appBar: AppBar(
         backgroundColor: const Color(0xFF075E54),
         elevation: 0,
